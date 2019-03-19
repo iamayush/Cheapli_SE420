@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/dan/se420fall2017/trunk/Cheapli_SE420/Cheapli_SE420.cfg',
+        cfgScript: 'C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_SE420.cfg',
         profile: 'release',
         cfgHome: 'xconfig_Cheapli_SE420',
 });
@@ -40,8 +40,8 @@ else {
 }
 
 var thisObj = {
-    cfg:        'C:/dan/se420fall2017/trunk/Cheapli_SE420/Cheapli_SE420.cfg',
-    outputPath: 'C:/dan/se420fall2017/trunk/Cheapli_SE420/Cheapli_SE420Project/.config/xconfig_Cheapli_SE420',
+    cfg:        'C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_SE420.cfg',
+    outputPath: 'C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_SE420Project/.config/xconfig_Cheapli_SE420',
     exeName:    'Cheapli_SE420' + suffix,
     exeIntName: 'Cheapli_SE420' + suffix.replace('.', '_'),
     targ:       targ,

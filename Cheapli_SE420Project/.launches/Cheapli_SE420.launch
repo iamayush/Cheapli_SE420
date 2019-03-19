@@ -17,6 +17,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.Spectrum Digital XDS510USB Emulator_0/C28xx_CPU1" value="${build_artifact:Cheapli_SE420}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Spectrum Digital XDS510USB Emulator_0/C28xx_CPU1" value="Cheapli_SE420"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:Cheapli_SE420}"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Spectrum Digital XDS510USB Emulator_0/C28xx_CPU2" value="C:/ayush2\repo\trunk\Cheapli_SE420_cpu2\Cheapli_SE420_cpu2Project\Debug\Cheapli_SE420_cpu2.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/Cheapli_SE420"/>
 </listAttribute>

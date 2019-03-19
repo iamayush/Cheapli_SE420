@@ -16,6 +16,6 @@ if (!(target instanceof xdc.module("xdc.bld.ITarget").Module)) {
 }
 
 /* configuro was passed the target's rootDir explicitly */
-target.rootDir = 'C:/CCStudio_v7/ccsv7/tools/compiler/ti-cgt-c2000_17.6.0.STS';
+target.rootDir = 'C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS';
 
 Build.targets = [target];

@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/Cheapli_SE420_p28FP.xdl
-	$(SED) 's"^\"\(package/cfg/Cheapli_SE420_p28FPcfg.cmd\)\"$""\"C:/dan/se420fall2017/trunk/Cheapli_SE420/Cheapli_SE420Project/.config/xconfig_Cheapli_SE420/\1\""' package/cfg/Cheapli_SE420_p28FP.xdl > $@
+	$(SED) 's"^\"\(package/cfg/Cheapli_SE420_p28FPcfg.cmd\)\"$""\"C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_SE420Project/.config/xconfig_Cheapli_SE420/\1\""' package/cfg/Cheapli_SE420_p28FP.xdl > $@
 	-$(SETDATE) -r:max package/cfg/Cheapli_SE420_p28FP.h compiler.opt compiler.opt.defs

@@ -358,9 +358,10 @@ void main(void)
     GPIO_SetupPinOptions(13, GPIO_OUTPUT, GPIO_PUSHPULL);       //toggle led setup
     GpioDataRegs.GPASET.bit.GPIO13 = 1;
 
-    GPIO_SetupPinMux(63, GPIO_MUX_CPU1, 0);                     //toggle led setup
+    // Ayush - pin 63 handed to cpu2
+    GPIO_SetupPinMux(63, GPIO_MUX_CPU2, 0);                     //toggle led setup
     GPIO_SetupPinOptions(63, GPIO_OUTPUT, GPIO_PUSHPULL);       //toggle led setup
-    GpioDataRegs.GPBSET.bit.GPIO63 = 1;
+    //GpioDataRegs.GPBSET.bit.GPIO63 = 1;
     GPIO_SetupPinMux(41, GPIO_MUX_CPU1, 0);                     //toggle led setup
     GPIO_SetupPinOptions(41, GPIO_OUTPUT, GPIO_PUSHPULL);       //toggle led setup
     GpioDataRegs.GPBSET.bit.GPIO41 = 1;
@@ -477,11 +478,12 @@ void clkFunc(void)
             GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;          //blink blue led d10 to show cpu running
     }
 
-    if((timeVar%1000) == 0)
-    {
-        //GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;
-        GpioDataRegs.GPBTOGGLE.bit.GPIO63 = 1;
-    }
+// Commented out by Ayush - toggle 63 through cpu2
+//    if((timeVar%1000) == 0)
+//    {
+//        //GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;
+//        GpioDataRegs.GPBTOGGLE.bit.GPIO63 = 1;
+//    }
 
 
     int i;
