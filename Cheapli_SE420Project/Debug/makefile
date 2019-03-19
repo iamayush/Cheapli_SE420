@@ -10,14 +10,16 @@ GEN_OPTS__FLAG := --cmd_file="configPkg/compiler.opt"
 GEN_CMDS__FLAG := -l"configPkg/linker.cmd"
 
 ORDERED_OBJS += \
-"./F2837xS_Adc.obj" \
-"./F2837xS_CodeStartBranch.obj" \
-"./F2837xS_EPwm.obj" \
-"./F2837xS_GlobalVariableDefs.obj" \
-"./F2837xS_Gpio.obj" \
-"./F2837xS_Spi.obj" \
-"./F2837xS_SysCtrl.obj" \
-"./F2837xS_usDelay.obj" \
+"./F2837xD_Adc.obj" \
+"./F2837xD_CodeStartBranch.obj" \
+"./F2837xD_EPwm.obj" \
+"./F2837xD_GlobalVariableDefs.obj" \
+"./F2837xD_Gpio.obj" \
+"./F2837xD_Ipc.obj" \
+"./F2837xD_Ipc_Driver.obj" \
+"./F2837xD_Spi.obj" \
+"./F2837xD_SysCtrl.obj" \
+"./F2837xD_usDelay.obj" \
 "./f28377sADC.obj" \
 "./f28377sCoecsl.obj" \
 "./f28377sDAC.obj" \
@@ -156,7 +158,7 @@ all: Cheapli_SE420.out secondary-outputs
 Cheapli_SE420.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Cheapli_SE420.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/cmd/" -i"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/cmd/" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Cheapli_SE420_linkInfo.xml" --rom_model -o "Cheapli_SE420.out" $(ORDERED_OBJS)
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Cheapli_SE420.map" --stack_size=0x200 --warn_sections -i"C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/cmd" -i"C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/cmd" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/lib" -i"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Cheapli_SE420_linkInfo.xml" --rom_model -o "Cheapli_SE420.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
@@ -171,9 +173,9 @@ Cheapli_SE420.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_CMDS__QUOTED)$(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "F2837xS_Adc.obj" "F2837xS_CodeStartBranch.obj" "F2837xS_EPwm.obj" "F2837xS_GlobalVariableDefs.obj" "F2837xS_Gpio.obj" "F2837xS_Spi.obj" "F2837xS_SysCtrl.obj" "F2837xS_usDelay.obj" "f28377sADC.obj" "f28377sCoecsl.obj" "f28377sDAC.obj" "f28377sEPWM3A.obj" "f28377sEqep.obj" "f28377sSerial.obj" "lcd.obj" "user_CheapliBEMF_SE420.obj" 
-	-$(RM) "F2837xS_Adc.d" "F2837xS_EPwm.d" "F2837xS_GlobalVariableDefs.d" "F2837xS_Gpio.d" "F2837xS_Spi.d" "F2837xS_SysCtrl.d" "f28377sADC.d" "f28377sCoecsl.d" "f28377sDAC.d" "f28377sEPWM3A.d" "f28377sEqep.d" "f28377sSerial.d" "lcd.d" "user_CheapliBEMF_SE420.d" 
-	-$(RM) "F2837xS_CodeStartBranch.d" "F2837xS_usDelay.d" 
+	-$(RM) "F2837xD_Adc.obj" "F2837xD_CodeStartBranch.obj" "F2837xD_EPwm.obj" "F2837xD_GlobalVariableDefs.obj" "F2837xD_Gpio.obj" "F2837xD_Ipc.obj" "F2837xD_Ipc_Driver.obj" "F2837xD_Spi.obj" "F2837xD_SysCtrl.obj" "F2837xD_usDelay.obj" "f28377sADC.obj" "f28377sCoecsl.obj" "f28377sDAC.obj" "f28377sEPWM3A.obj" "f28377sEqep.obj" "f28377sSerial.obj" "lcd.obj" "user_CheapliBEMF_SE420.obj" 
+	-$(RM) "F2837xD_Adc.d" "F2837xD_EPwm.d" "F2837xD_GlobalVariableDefs.d" "F2837xD_Gpio.d" "F2837xD_Ipc.d" "F2837xD_Ipc_Driver.d" "F2837xD_Spi.d" "F2837xD_SysCtrl.d" "f28377sADC.d" "f28377sCoecsl.d" "f28377sDAC.d" "f28377sEPWM3A.d" "f28377sEqep.d" "f28377sSerial.d" "lcd.d" "user_CheapliBEMF_SE420.d" 
+	-$(RM) "F2837xD_CodeStartBranch.d" "F2837xD_usDelay.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

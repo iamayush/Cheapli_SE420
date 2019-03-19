@@ -8,7 +8,7 @@
 
 #include <f28377sCoecsl.h>
 #include <f28377sSerial.h>
-#include <F2837xS_sci.h>
+#include <F2837xD_sci.h> // Ayush
 #include "F28x_Project.h"
 
 #define LCD_COLUMNS		20

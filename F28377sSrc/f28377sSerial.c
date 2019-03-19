@@ -24,7 +24,7 @@
 
 #include <f28377sCoecsl.h>
 #include <f28377sSerial.h>
-#include <F2837xS_sci.h>
+#include <F2837xD_sci.h> // Ayush
 #include "F28x_Project.h"     // Device Headerfile and Examples Include File
 
 //#define NEW_BLOCK_CHAR	0xFF00

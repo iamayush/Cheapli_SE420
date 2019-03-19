@@ -44,10 +44,10 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.TMU_SUPPORT.2113980487" name="Specify TMU support (--tmu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.TMU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.TMU_SUPPORT.tmu0" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.INCLUDE_PATH.981293865" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${BIOS_INCLUDE_PATH}"/>
+									<listOptionValue builtIn="false" value="&quot;C:\CCStudio_v8\controlSUITE\device_support\F2837xD\v140\F2837xD_common\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\CCStudio_v8\controlSUITE\device_support\F2837xD\v140\F2837xD_headers\include&quot;"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420\F28377sHeaders\&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_common\include\&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_headers\include\&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL.1236610135" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEFINE.1665873757" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.compilerID.DEFINE" valueType="definedSymbols">
@@ -81,9 +81,9 @@
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.SEARCH_PATH.1630267051" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${BIOS_LIBRARY_PATH}"/>
+									<listOptionValue builtIn="false" value="&quot;C:\CCStudio_v8\controlSUITE\device_support\F2837xD\v140\F2837xD_common\cmd&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\CCStudio_v8\controlSUITE\device_support\F2837xD\v140\F2837xD_headers\cmd&quot;"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_common\cmd\&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_headers\cmd\&quot;"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.DISPLAY_ERROR_NUMBER.1925780962" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>

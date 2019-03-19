@@ -1,4 +1,5 @@
 #include "F28x_Project.h"     // Device Headerfile and Examples Include File
+#include "F2837xD_Ipc_drivers.h"
 #include <xdc/std.h>
 #include <xdc/runtime/Log.h>
 #include <ti/sysbios/BIOS.h>
@@ -331,13 +332,12 @@ void main(void)
     memcpy(&RamfuncsRunStart, &RamfuncsLoadStart, (size_t)&RamfuncsLoadSize);
 #endif
 
-
     // Call Flash Initialization to setup flash waitstates
     // This function must reside in RAM
 #ifdef _FLASH
-    InitFlash_Bank0();
-    InitFlash_Bank1();
+    InitFlash();
 #endif
+
     // Step 1. Initialize System Control:
     // PLL, WatchDog, enable Peripheral Clocks
     // This example function is found in the F2837xS_SysCtrl.c file.
@@ -426,6 +426,16 @@ void main(void)
     EDIS;
 
     // ************ End init code *************************
+#ifdef _STANDALONE
+#ifdef _FLASH
+    // Send boot command to allow the CPU2 application to begin execution
+    IPCBootCPU2(C1C2_BROM_BOOTMODE_BOOT_FROM_FLASH);
+#else
+    // Send boot command to allow the CPU2 application to begin execution
+    IPCBootCPU2(C1C2_BROM_BOOTMODE_BOOT_FROM_RAM);
+#endif
+#endif
+
 
     // !!!!!!!!!!!!!!!!!  NO CODE below here in Main() !!!!!!!!!!!!!!!!!!!!!
     // !!!!!!!!!!!!!!!!!  All inits above !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -478,12 +488,12 @@ void clkFunc(void)
             GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;          //blink blue led d10 to show cpu running
     }
 
-// Commented out by Ayush - toggle 63 through cpu2
-//    if((timeVar%1000) == 0)
-//    {
-//        //GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;
-//        GpioDataRegs.GPBTOGGLE.bit.GPIO63 = 1;
-//    }
+    // Commented out by Ayush - toggle 63 through cpu2
+    //    if((timeVar%1000) == 0)
+    //    {
+    //        //GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;
+    //        GpioDataRegs.GPBTOGGLE.bit.GPIO63 = 1;
+    //    }
 
 
     int i;
@@ -918,8 +928,8 @@ void balanceControl(void)
     vel = vel_orig;
     vel2 = 1.764705882352941e-01 * vel2 + 2.058823529411765e+02 * (th_value - th_old);
 
-//        vel = -vel;
-//        vel2 = -vel2;
+    //        vel = -vel;
+    //        vel2 = -vel2;
 
 #endif
 

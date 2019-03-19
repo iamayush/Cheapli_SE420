@@ -9,16 +9,18 @@ CFG_SRCS += \
 C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_SE420.cfg 
 
 ASM_SRCS += \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_usDelay.asm 
+../F2837xD_CodeStartBranch.asm \
+../F2837xD_usDelay.asm 
 
 C_SRCS += \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Adc.c \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_EPwm.c \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Gpio.c \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Spi.c \
-C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_SysCtrl.c \
+../F2837xD_Adc.c \
+../F2837xD_EPwm.c \
+../F2837xD_GlobalVariableDefs.c \
+../F2837xD_Gpio.c \
+../F2837xD_Ipc.c \
+../F2837xD_Ipc_Driver.c \
+../F2837xD_Spi.c \
+../F2837xD_SysCtrl.c \
 C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sADC.c \
 C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sCoecsl.c \
 C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sDAC.c \
@@ -39,12 +41,14 @@ GEN_MISC_DIRS += \
 ./configPkg/ 
 
 C_DEPS += \
-./F2837xS_Adc.d \
-./F2837xS_EPwm.d \
-./F2837xS_GlobalVariableDefs.d \
-./F2837xS_Gpio.d \
-./F2837xS_Spi.d \
-./F2837xS_SysCtrl.d \
+./F2837xD_Adc.d \
+./F2837xD_EPwm.d \
+./F2837xD_GlobalVariableDefs.d \
+./F2837xD_Gpio.d \
+./F2837xD_Ipc.d \
+./F2837xD_Ipc_Driver.d \
+./F2837xD_Spi.d \
+./F2837xD_SysCtrl.d \
 ./f28377sADC.d \
 ./f28377sCoecsl.d \
 ./f28377sDAC.d \
@@ -58,14 +62,16 @@ GEN_OPTS += \
 ./configPkg/compiler.opt 
 
 OBJS += \
-./F2837xS_Adc.obj \
-./F2837xS_CodeStartBranch.obj \
-./F2837xS_EPwm.obj \
-./F2837xS_GlobalVariableDefs.obj \
-./F2837xS_Gpio.obj \
-./F2837xS_Spi.obj \
-./F2837xS_SysCtrl.obj \
-./F2837xS_usDelay.obj \
+./F2837xD_Adc.obj \
+./F2837xD_CodeStartBranch.obj \
+./F2837xD_EPwm.obj \
+./F2837xD_GlobalVariableDefs.obj \
+./F2837xD_Gpio.obj \
+./F2837xD_Ipc.obj \
+./F2837xD_Ipc_Driver.obj \
+./F2837xD_Spi.obj \
+./F2837xD_SysCtrl.obj \
+./F2837xD_usDelay.obj \
 ./f28377sADC.obj \
 ./f28377sCoecsl.obj \
 ./f28377sDAC.obj \
@@ -76,21 +82,23 @@ OBJS += \
 ./user_CheapliBEMF_SE420.obj 
 
 ASM_DEPS += \
-./F2837xS_CodeStartBranch.d \
-./F2837xS_usDelay.d 
+./F2837xD_CodeStartBranch.d \
+./F2837xD_usDelay.d 
 
 GEN_MISC_DIRS__QUOTED += \
 "configPkg\" 
 
 OBJS__QUOTED += \
-"F2837xS_Adc.obj" \
-"F2837xS_CodeStartBranch.obj" \
-"F2837xS_EPwm.obj" \
-"F2837xS_GlobalVariableDefs.obj" \
-"F2837xS_Gpio.obj" \
-"F2837xS_Spi.obj" \
-"F2837xS_SysCtrl.obj" \
-"F2837xS_usDelay.obj" \
+"F2837xD_Adc.obj" \
+"F2837xD_CodeStartBranch.obj" \
+"F2837xD_EPwm.obj" \
+"F2837xD_GlobalVariableDefs.obj" \
+"F2837xD_Gpio.obj" \
+"F2837xD_Ipc.obj" \
+"F2837xD_Ipc_Driver.obj" \
+"F2837xD_Spi.obj" \
+"F2837xD_SysCtrl.obj" \
+"F2837xD_usDelay.obj" \
 "f28377sADC.obj" \
 "f28377sCoecsl.obj" \
 "f28377sDAC.obj" \
@@ -101,12 +109,14 @@ OBJS__QUOTED += \
 "user_CheapliBEMF_SE420.obj" 
 
 C_DEPS__QUOTED += \
-"F2837xS_Adc.d" \
-"F2837xS_EPwm.d" \
-"F2837xS_GlobalVariableDefs.d" \
-"F2837xS_Gpio.d" \
-"F2837xS_Spi.d" \
-"F2837xS_SysCtrl.d" \
+"F2837xD_Adc.d" \
+"F2837xD_EPwm.d" \
+"F2837xD_GlobalVariableDefs.d" \
+"F2837xD_Gpio.d" \
+"F2837xD_Ipc.d" \
+"F2837xD_Ipc_Driver.d" \
+"F2837xD_Spi.d" \
+"F2837xD_SysCtrl.d" \
 "f28377sADC.d" \
 "f28377sCoecsl.d" \
 "f28377sDAC.d" \
@@ -121,16 +131,18 @@ GEN_FILES__QUOTED += \
 "configPkg\compiler.opt" 
 
 ASM_DEPS__QUOTED += \
-"F2837xS_CodeStartBranch.d" \
-"F2837xS_usDelay.d" 
+"F2837xD_CodeStartBranch.d" \
+"F2837xD_usDelay.d" 
 
 C_SRCS__QUOTED += \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Adc.c" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_EPwm.c" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Gpio.c" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Spi.c" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_SysCtrl.c" \
+"../F2837xD_Adc.c" \
+"../F2837xD_EPwm.c" \
+"../F2837xD_GlobalVariableDefs.c" \
+"../F2837xD_Gpio.c" \
+"../F2837xD_Ipc.c" \
+"../F2837xD_Ipc_Driver.c" \
+"../F2837xD_Spi.c" \
+"../F2837xD_SysCtrl.c" \
 "C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sADC.c" \
 "C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sCoecsl.c" \
 "C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sDAC.c" \
@@ -141,7 +153,7 @@ C_SRCS__QUOTED += \
 "C:/ayush2/repo/trunk/Cheapli_SE420/user_CheapliBEMF_SE420.c" 
 
 ASM_SRCS__QUOTED += \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm" \
-"C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_usDelay.asm" 
+"../F2837xD_CodeStartBranch.asm" \
+"../F2837xD_usDelay.asm" 
 
 

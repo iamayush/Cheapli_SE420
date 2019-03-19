@@ -19,115 +19,129 @@ configPkg/linker.cmd: build-50866991 C:/ayush2/repo/trunk/Cheapli_SE420/Cheapli_
 configPkg/compiler.opt: build-50866991
 configPkg/: build-50866991
 
-F2837xS_Adc.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Adc.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_Adc.obj: ../F2837xD_Adc.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Adc.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_Adc.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_CodeStartBranch.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_CodeStartBranch.obj: ../F2837xD_CodeStartBranch.asm $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_CodeStartBranch.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_CodeStartBranch.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_EPwm.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_EPwm.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_EPwm.obj: ../F2837xD_EPwm.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_EPwm.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_EPwm.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_GlobalVariableDefs.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_GlobalVariableDefs.obj: ../F2837xD_GlobalVariableDefs.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_GlobalVariableDefs.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_Gpio.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Gpio.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_Gpio.obj: ../F2837xD_Gpio.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Gpio.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_Gpio.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_Spi.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_Spi.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_Ipc.obj: ../F2837xD_Ipc.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_Spi.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_Ipc.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_SysCtrl.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_SysCtrl.c $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_Ipc_Driver.obj: ../F2837xD_Ipc_Driver.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_SysCtrl.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_Ipc_Driver.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
-F2837xS_usDelay.obj: C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/source/F2837xS_usDelay.asm $(GEN_OPTS) | $(GEN_HDRS)
+F2837xD_Spi.obj: ../F2837xD_Spi.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xS_usDelay.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_Spi.d_raw" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: "$<"'
+	@echo ' '
+
+F2837xD_SysCtrl.obj: ../F2837xD_SysCtrl.c $(GEN_OPTS) | $(GEN_HDRS)
+	@echo 'Building file: "$<"'
+	@echo 'Invoking: C2000 Compiler'
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_SysCtrl.d_raw" $(GEN_OPTS__FLAG) "$<"
+	@echo 'Finished building: "$<"'
+	@echo ' '
+
+F2837xD_usDelay.obj: ../F2837xD_usDelay.asm $(GEN_OPTS) | $(GEN_HDRS)
+	@echo 'Building file: "$<"'
+	@echo 'Invoking: C2000 Compiler'
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="F2837xD_usDelay.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sADC.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sADC.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sADC.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sADC.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sCoecsl.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sCoecsl.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sCoecsl.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sCoecsl.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sDAC.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sDAC.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sDAC.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sDAC.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sEPWM3A.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sEPWM3A.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEPWM3A.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEPWM3A.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sEqep.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sEqep.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEqep.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sEqep.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 f28377sSerial.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sSerial.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sSerial.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="f28377sSerial.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 lcd.obj: C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/lcd.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="lcd.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="lcd.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 user_CheapliBEMF_SE420.obj: C:/ayush2/repo/trunk/Cheapli_SE420/user_CheapliBEMF_SE420.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: C2000 Compiler'
-	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_common/include/" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/v140/F2837xS_headers/include/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_CheapliBEMF_SE420.d_raw" $(GEN_OPTS__FLAG) "$<"
+	"C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/include" --include_path="C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_headers/include" --include_path="C:/CCStudio_v8/ccsv8/tools/compiler/ti-cgt-c2000_17.6.0.STS/include" --include_path="C:/ayush2/repo/trunk/Cheapli_SE420/F28377sHeaders/" --define=_FLASH --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="user_CheapliBEMF_SE420.d_raw" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 

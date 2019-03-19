@@ -10,8 +10,7 @@
 // $Copyright: Copyright (C) 2014-2015 Texas Instruments Incorporated -
 //             http://www.ti.com/ ALL RIGHTS RESERVED $
 //###########################################################################
-
-#include "F2837xS_device.h"     // F2837xS Headerfile Include File
+#include "F2837xD_device.h"     // F2837xS Headerfile Include File // Ayush
 
 //---------------------------------------------------------------------------
 // Define Global Peripheral Variables:

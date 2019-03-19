@@ -11,8 +11,8 @@
 //             http://www.ti.com/ ALL RIGHTS RESERVED $
 //###########################################################################
 
-#include "F2837xS_device.h"     // F2837xS Headerfile Include File
-#include "F2837xS_Examples.h"   // F2837xS Examples Include File
+#include "F2837xD_device.h"     // F2837xS Headerfile Include File
+#include "F2837xD_Examples.h"   // F2837xS Examples Include File // Ayush
 
 void InitEPwmGpio(void)
 {

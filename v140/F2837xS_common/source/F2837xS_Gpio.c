@@ -10,8 +10,8 @@
 //             http://www.ti.com/ ALL RIGHTS RESERVED $
 //###########################################################################
 
-#include "F2837xS_device.h"
-#include "F2837xS_Examples.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h" // Ayush
 
 //Low-level functions for GPIO configuration
 //Sets all pins to be muxed to GPIO in input mode with pull-ups enabled.

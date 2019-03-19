@@ -32,46 +32,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Cheapli_SE420.cfg</locationURI>
 		</link>
 		<link>
-			<name>F2837xS_Adc.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_Adc.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_CodeStartBranch.asm</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_CodeStartBranch.asm</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_EPwm.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_EPwm.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_GlobalVariableDefs.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_headers/source/F2837xS_GlobalVariableDefs.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_Gpio.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_Gpio.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_Spi.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_Spi.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_SysCtrl.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_SysCtrl.c</locationURI>
-		</link>
-		<link>
-			<name>F2837xS_usDelay.asm</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/v140/F2837xS_common/source/F2837xS_usDelay.asm</locationURI>
-		</link>
-		<link>
 			<name>f28377sADC.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/f28377sSrc/f28377sADC.c</locationURI>

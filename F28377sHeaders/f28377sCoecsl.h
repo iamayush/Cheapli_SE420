@@ -44,8 +44,8 @@
 
 /* device includes */
 //#include <DSP2833x_Device.h>
-#include <F2837xS_device.h>
-#include "F2837xS_Examples.h"
+#include <F2837xD_device.h> //Ayush
+#include "F2837xD_Examples.h"
 
 /* general constants */
 #define PI			3.1415926535897932384626433832795
