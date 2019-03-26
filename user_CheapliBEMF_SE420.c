@@ -359,8 +359,8 @@ void main(void)
     GpioDataRegs.GPASET.bit.GPIO13 = 1;
 
     // Ayush - pin 63 handed to cpu2
-    GPIO_SetupPinMux(63, GPIO_MUX_CPU2, 0);                     //toggle led setup
-    GPIO_SetupPinOptions(63, GPIO_OUTPUT, GPIO_PUSHPULL);       //toggle led setup
+    GPIO_SetupPinMux(63, GPIO_MUX_CPU2, 0);                     //Ayush pin 63 for cpu2
+    GPIO_SetupPinOptions(63, GPIO_OUTPUT, GPIO_PUSHPULL);
     //GpioDataRegs.GPBSET.bit.GPIO63 = 1;
     GPIO_SetupPinMux(41, GPIO_MUX_CPU1, 0);                     //toggle led setup
     GPIO_SetupPinOptions(41, GPIO_OUTPUT, GPIO_PUSHPULL);       //toggle led setup
