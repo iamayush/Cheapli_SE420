@@ -77,7 +77,7 @@
 									<listOptionValue builtIn="false" value="libc.a"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}\lib\rts2800_fpu32.lib"/>
 									<listOptionValue builtIn="false" value="C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_common\cmd\2837x_Dan_FLASH_lnk_cpu1.cmd"/>
-									<listOptionValue builtIn="false" value="C:\ayush2\repo\trunk\Cheapli_SE420\v140\F2837xS_headers\cmd\F2837xS_Headers_BIOS.cmd"/>
+									<listOptionValue builtIn="false" value="&quot;C:\ayush2\repo\trunk\Cheapli_SE420_cpu2\v140\F2837xS_headers\cmd\F2837xD_Headers_BIOS_cpu2.cmd&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.SEARCH_PATH.1630267051" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_17.6.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${BIOS_LIBRARY_PATH}"/>
