@@ -488,6 +488,13 @@ void clkFunc(void)
             GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;          //blink blue led d10 to show cpu running
     }
 
+    // Ayush- blink 41 slower forever after cal to indicate core 1 is working
+    if((timeVar%1000) == 0)
+    {
+        if(doneCal == 1)
+            GpioDataRegs.GPBTOGGLE.bit.GPIO41 = 1;          //blink blue led d10 to show cpu running
+    }
+
     // Commented out by Ayush - toggle 63 through cpu2
     //    if((timeVar%1000) == 0)
     //    {

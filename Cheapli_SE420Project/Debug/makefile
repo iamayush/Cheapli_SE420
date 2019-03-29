@@ -17,6 +17,7 @@ ORDERED_OBJS += \
 "./F2837xD_Gpio.obj" \
 "./F2837xD_Ipc.obj" \
 "./F2837xD_Ipc_Driver.obj" \
+"./F2837xD_Ipc_Driver_Util.obj" \
 "./F2837xD_Spi.obj" \
 "./F2837xD_SysCtrl.obj" \
 "./F2837xD_usDelay.obj" \
@@ -173,8 +174,8 @@ Cheapli_SE420.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_CMDS__QUOTED)$(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "F2837xD_Adc.obj" "F2837xD_CodeStartBranch.obj" "F2837xD_EPwm.obj" "F2837xD_GlobalVariableDefs.obj" "F2837xD_Gpio.obj" "F2837xD_Ipc.obj" "F2837xD_Ipc_Driver.obj" "F2837xD_Spi.obj" "F2837xD_SysCtrl.obj" "F2837xD_usDelay.obj" "f28377sADC.obj" "f28377sCoecsl.obj" "f28377sDAC.obj" "f28377sEPWM3A.obj" "f28377sEqep.obj" "f28377sSerial.obj" "lcd.obj" "user_CheapliBEMF_SE420.obj" 
-	-$(RM) "F2837xD_Adc.d" "F2837xD_EPwm.d" "F2837xD_GlobalVariableDefs.d" "F2837xD_Gpio.d" "F2837xD_Ipc.d" "F2837xD_Ipc_Driver.d" "F2837xD_Spi.d" "F2837xD_SysCtrl.d" "f28377sADC.d" "f28377sCoecsl.d" "f28377sDAC.d" "f28377sEPWM3A.d" "f28377sEqep.d" "f28377sSerial.d" "lcd.d" "user_CheapliBEMF_SE420.d" 
+	-$(RM) "F2837xD_Adc.obj" "F2837xD_CodeStartBranch.obj" "F2837xD_EPwm.obj" "F2837xD_GlobalVariableDefs.obj" "F2837xD_Gpio.obj" "F2837xD_Ipc.obj" "F2837xD_Ipc_Driver.obj" "F2837xD_Ipc_Driver_Util.obj" "F2837xD_Spi.obj" "F2837xD_SysCtrl.obj" "F2837xD_usDelay.obj" "f28377sADC.obj" "f28377sCoecsl.obj" "f28377sDAC.obj" "f28377sEPWM3A.obj" "f28377sEqep.obj" "f28377sSerial.obj" "lcd.obj" "user_CheapliBEMF_SE420.obj" 
+	-$(RM) "F2837xD_Adc.d" "F2837xD_EPwm.d" "F2837xD_GlobalVariableDefs.d" "F2837xD_Gpio.d" "F2837xD_Ipc.d" "F2837xD_Ipc_Driver.d" "F2837xD_Ipc_Driver_Util.d" "F2837xD_Spi.d" "F2837xD_SysCtrl.d" "f28377sADC.d" "f28377sCoecsl.d" "f28377sDAC.d" "f28377sEPWM3A.d" "f28377sEqep.d" "f28377sSerial.d" "lcd.d" "user_CheapliBEMF_SE420.d" 
 	-$(RM) "F2837xD_CodeStartBranch.d" "F2837xD_usDelay.d" 
 	-@echo 'Finished clean'
 	-@echo ' '

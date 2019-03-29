@@ -87,8 +87,8 @@ void InitSysCtrl(void)
     // F28_PLLCR and F28_CLKINDIV are defined in F2837xD_Examples.h
     // Note: The internal oscillator CANNOT be used as the PLL source if the
     // PLLSYSCLK is configured to frequencies above 194 MHz.
-    InitSysPll(XTAL_OSC,IMULT_20,FMULT_1,PLLCLK_BY_2); 		//PLLSYSCLK = 20MHz(XTAL_OSC) * 20 (IMULT) * 1 (FMULT) /  2 (PLLCLK_BY_2)
-
+    //InitSysPll(XTAL_OSC,IMULT_20,FMULT_1,PLLCLK_BY_2); 		//PLLSYSCLK = 20MHz(XTAL_OSC) * 20 (IMULT) * 1 (FMULT) /  2 (PLLCLK_BY_2)
+    InitSysPll(XTAL_OSC,IMULT_40,FMULT_1,PLLCLK_BY_2);      //PLLSYSCLK = 10Mhz(OSCCLK) * 40 (IMULT) * 1 (FMULT) /  2 (PLLCLK_BY_2)
     //Turn on all peripherals
 	InitPeripheralClocks();
 #endif

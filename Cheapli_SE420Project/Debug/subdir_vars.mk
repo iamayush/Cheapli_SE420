@@ -19,6 +19,7 @@ C_SRCS += \
 ../F2837xD_Gpio.c \
 ../F2837xD_Ipc.c \
 ../F2837xD_Ipc_Driver.c \
+C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/source/F2837xD_Ipc_Driver_Util.c \
 ../F2837xD_Spi.c \
 ../F2837xD_SysCtrl.c \
 C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sADC.c \
@@ -47,6 +48,7 @@ C_DEPS += \
 ./F2837xD_Gpio.d \
 ./F2837xD_Ipc.d \
 ./F2837xD_Ipc_Driver.d \
+./F2837xD_Ipc_Driver_Util.d \
 ./F2837xD_Spi.d \
 ./F2837xD_SysCtrl.d \
 ./f28377sADC.d \
@@ -69,6 +71,7 @@ OBJS += \
 ./F2837xD_Gpio.obj \
 ./F2837xD_Ipc.obj \
 ./F2837xD_Ipc_Driver.obj \
+./F2837xD_Ipc_Driver_Util.obj \
 ./F2837xD_Spi.obj \
 ./F2837xD_SysCtrl.obj \
 ./F2837xD_usDelay.obj \
@@ -96,6 +99,7 @@ OBJS__QUOTED += \
 "F2837xD_Gpio.obj" \
 "F2837xD_Ipc.obj" \
 "F2837xD_Ipc_Driver.obj" \
+"F2837xD_Ipc_Driver_Util.obj" \
 "F2837xD_Spi.obj" \
 "F2837xD_SysCtrl.obj" \
 "F2837xD_usDelay.obj" \
@@ -115,6 +119,7 @@ C_DEPS__QUOTED += \
 "F2837xD_Gpio.d" \
 "F2837xD_Ipc.d" \
 "F2837xD_Ipc_Driver.d" \
+"F2837xD_Ipc_Driver_Util.d" \
 "F2837xD_Spi.d" \
 "F2837xD_SysCtrl.d" \
 "f28377sADC.d" \
@@ -141,6 +146,7 @@ C_SRCS__QUOTED += \
 "../F2837xD_Gpio.c" \
 "../F2837xD_Ipc.c" \
 "../F2837xD_Ipc_Driver.c" \
+"C:/CCStudio_v8/controlSUITE/device_support/F2837xD/v140/F2837xD_common/source/F2837xD_Ipc_Driver_Util.c" \
 "../F2837xD_Spi.c" \
 "../F2837xD_SysCtrl.c" \
 "C:/ayush2/repo/trunk/Cheapli_SE420/F28377sSrc/f28377sADC.c" \

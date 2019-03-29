@@ -13,7 +13,7 @@
 
 #include "F2837xD_device.h"     // F2837xD Headerfile Include File
 #include "F2837xD_Examples.h"   // F2837xD Examples Include File
-
+#ifdef CPU1
 void InitEPwmGpio(void)
 {
 	InitEPwm1Gpio();
@@ -329,3 +329,4 @@ void InitEPwm12Gpio(void)
 
     EDIS;
 }
+#endif CPU1
