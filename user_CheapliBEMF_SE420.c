@@ -379,7 +379,7 @@ void main(void)
     // ANDREW serialRXA to simulink_serialRX
     init_serial(&SerialA,115200,simulink_serialRX);
 
-    init_serial(&SerialB,115200,NULL);
+    //init_serial(&SerialB,115200,NULL); // init in cpu2
 
     init_serial(&SerialC,19200,NULL);
 
