@@ -379,7 +379,13 @@ void main(void)
     // ANDREW serialRXA to simulink_serialRX
     init_serial(&SerialA,115200,simulink_serialRX);
 
-    //init_serial(&SerialB,115200,NULL); // init in cpu2
+    init_serial(&SerialB,115200,NULL); // NULL passed here as callback is set from cpu2
+    // disable interrupt as it needs to only enable interrupt on cpu2
+    PieCtrlRegs.PIEIER9.bit.INTx3 = 0;
+    PieCtrlRegs.PIEIER9.bit.INTx4 = 0;
+    IER &= ~(M_INT9);
+    //    init_serial(&SerialB,115200,serialRXB);
+    //    DELAY_US(200000);
 
     init_serial(&SerialC,19200,NULL);
 
